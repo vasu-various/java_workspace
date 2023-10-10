@@ -1,0 +1,27 @@
+import java.util.Scanner;
+
+public class Sum {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        
+      
+        int sum = 0;
+        int count = 5; 
+        
+       
+        for (int i = 1; i <= count; i++) {
+            System.out.print("Enter number " + i + ": ");
+            int number = scanner.nextInt();
+            sum = sum + number;
+        }
+        
+      
+        double average = (double) sum / count;
+        
+      
+        System.out.println("Sum: " + sum);
+        System.out.println("Average: " + average);
+        
+      
+    }
+}
